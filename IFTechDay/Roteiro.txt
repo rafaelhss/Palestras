@@ -1,0 +1,64 @@
+Apresentação:
+
+
+GIT:
+- fazer init, add, commit
+- alterar o index
+- fazer add, commit de novo
+- mostrar o github client
+
+Maven
+- Mostrar como acha a referencia de uma biblioteca (usar JSF)
+- copiar o POM.XML pronto
+- mvn package
+- mostrar o repo, JSTL target\repo\javax\servlet\jstl\1.2
+
+Tomcat
+- Mostrar novamente no pom
+- executar target\bin\webapp
+
+
+
+DELETAR o TARGET antes de dar GIT ADD
+
+
+Heroku
+- CRIAR O PROCFILE
+	-git add --all
+	-git commit "add proc file"
+- heroku login
+- heroku create
+- git push heroku master
+
+HIBERNATE
+- Mostrar a classe anotada
+
+POSTGRES
+- Mostrar aprovisionamento no site
+- Abrir o pgAdmin
+- Mostrar o banco no meio de vários
+- Mostrar como cria uma tabela
+
+
+EXECUTAR A VERSAO 1 DA FERRAMENTA
+
+FACEBOOK
+- Mostrar o site developers
+- Alterar o form para apontar para o login face
+-Mudar no https://developers.facebook.com/  a CALLBACK
+
+EXECUTAR com a senha da Bertilla
+
+PAYPAL
+- Gerar o HTMl
+- Incluir o HTML no JSP
+
+
+EXECUTAR A VERSAO 3
+
+COMPRAR com a senha da bertilla
+
+MOSTRAR A GRANA NA CONTA...
+
+
+

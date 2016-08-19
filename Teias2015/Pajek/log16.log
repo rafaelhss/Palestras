@@ -1,0 +1,28 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+Msg Reading Pajek Project File  ---    C:\Users\rafa\Documents\pajek\scotland\Scotland.paj
+Msg Reading Network   ---    Scotland.net [2-Mode]
+Msg Reading Partition   ---    Affiliation partition of N1 [108,136]
+Msg Reading Partition   ---    Industrial_categories.clu
+Msg Reading Vector   ---    Capital.vec
+N 9999 RDPAJ "C:\Users\rafa\Documents\pajek\scotland\Scotland.paj"
+E 1 CIRCULAR
+E 1 DRAW 1 0 0 0 0
+E 1 KAMADA
+Msg Saving partition to file   ---    D:\Afilliation partition.clu
+C 1 WC "D:\Afilliation partition.clu" (244)
+E 1 DRAW 1 0 0 0 0
+Msg Saving network to file   ---    C:\Users\rafa\Documents\pajek\scotland\Scotland3.net
+N 1 WN "C:\Users\rafa\Documents\pajek\scotland\Scotland3.net" 0 (244)
+E 1 DRAW 1 0 0 0 0
+Msg Reading Network   ---    C:\Users\rafa\Documents\pajek\scotland\Scotland2.net
+N 2 RDN "C:\Users\rafa\Documents\pajek\scotland\Scotland2.net" (244)
+Msg Generating 1-mode network from 2-mode network
+N 3 AFFILMULT 2 TRUE FALSE (108)
+E 3 DRAW 0 0 0 0 0
+E 3 KAMADA

@@ -1,0 +1,15 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+Msg Reading Network   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015.net
+N 1 RDN "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015.net" (37946)
+Msg k-Neighbours
+C 1 NEIG 1 [63,2,2] (37946)
+Msg Extracting Subnetwork according to Partition
+N 2 EXT 1 1 [0-2] 1 (8786)
+E 2 CIRCULAR
+E 2 DRAW 2 0 0 0 0

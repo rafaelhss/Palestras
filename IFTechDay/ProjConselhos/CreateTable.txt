@@ -1,0 +1,7 @@
+ create table public.conselho
+(
+	email VARCHAR(255),
+	pergunta VARCHAR(255),
+	resposta VARCHAR(255),
+	ID  SERIAL PRIMARY KEY
+)	

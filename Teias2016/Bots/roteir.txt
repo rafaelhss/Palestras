@@ -1,0 +1,43 @@
+roteiro:
+
+1 - Apresentacao dos conceitos
+	O que sao Bots
+	Capacidades do Telegram
+	Concurso 1 milhao
+
+2 - Familiarizando-se com bots:
+	- Acesse https://web.telegram.org/#/im
+	- Faca login
+	- para testes:
+		@weatherman_bot
+		@guggybot
+		@logoquizbot
+		@mussum
+		@megasena ?
+		http://lalyos.github.io/jfiglet/   ?
+
+3 - Criando um bot
+	- Adicione @BotFather como amigo etc...
+
+4 - Testando a API no navegador
+	https://api.telegram.org/bot225779469:AAEB6m12LCsREqUgCSU0lt9WtRUPopEVZY8/getme
+	https://api.telegram.org/bot225779469:AAEB6m12LCsREqUgCSU0lt9WtRUPopEVZY8/getupdates
+	https://api.telegram.org/bot225779469:AAEB6m12LCsREqUgCSU0lt9WtRUPopEVZY8/sendmessage?chat_id=153350155&text=samba
+	
+5 - Proposta de arquitetura da solucao
+		- Discussao sobre webhook
+		- Discussao sobre ssl e google cloud
+		- Discussao sobre maven
+		
+6 - Criacao da aplicacao de teste
+	- git clone final2
+	- console.cloud.google.com
+		criar o projeto
+	- alterar o appengine-web.xml
+	- mvn appengine:update
+	- teste: https://[APP_ID].appspot.com/bot
+
+7 - Configuracao do web hook
+	https://api.telegram.org/bot238875196:AAFSvN-Vn0QWBE5Ww-UPreDUWKaY4sYO534/setwebhook?url=https://b4b24123.proxy.webhookapp.com
+	
+	https://api.telegram.org/bot225779469:AAEB6m12LCsREqUgCSU0lt9WtRUPopEVZY8/setwebhook?url=https://ed2c186b.ngrok.io

@@ -1,0 +1,23 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+Msg Reading Pajek Project File  ---    C:\Users\rafa\Documents\Artigos\Ego\EgoSomada.paj
+Msg Reading Network   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015.net
+Msg Reading Network   ---    Extracting N1 according to C1 [0-2]
+Msg Reading Network   ---    Simplification (SUM) of N2
+Msg Reading Partition   ---    2-All neighbours of vertex 63 in N1
+Msg Reading Partition   ---    Extracting from C1 vertices determined by C1 [0-2]
+N 9999 RDPAJ "C:\Users\rafa\Documents\Artigos\Ego\EgoSomada.paj"
+Msg Reading Network   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015_.net
+N 4 RDN "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015_.net" (514)
+E 4 DRAW 0 0 0 0 0
+Msg k-Neighbours
+C 3 NEIG 4 [10,0,2] (514)
+Msg Extracting Subnetwork according to Partition
+N 5 EXT 4 3 [0-1] 1 (49)
+Msg 5. Extracting N4 according to C3 [0-1] (49)
+N 5 INFONET 5 0 1 (49)

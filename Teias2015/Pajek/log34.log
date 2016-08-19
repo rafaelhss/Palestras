@@ -1,0 +1,23 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+Msg Reading Network   ---    C:\Users\rafa\Documents\Artigos\Ego\Nomes-Todas.net
+N 1 RDN "C:\Users\rafa\Documents\Artigos\Ego\Nomes-Todas.net" (221392)
+Msg Disposing Network...
+N 1 DN  (221392)
+Msg Reading Network   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2012.net
+N 2 RDN "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2012.net" (34)
+Msg Reading Network   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015_.net
+N 3 RDN "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015_.net" (49)
+E 2 DRAW 0 0 0 0 0
+Msg Disposing Network...
+N 3 DN  (49)
+Msg Reading Network   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015_.net
+N 4 RDN "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015_.net" (514)
+E 4 DRAW 0 0 0 0 0
+Msg 4. C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015_.net (514)
+N 4 INFONET 4 0 1 (514)

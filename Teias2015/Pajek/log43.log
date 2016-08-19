@@ -1,0 +1,65 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+Msg Reading Network   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015.net
+N 1 RDN "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma2015.net" (37946)
+Msg Removing multiple lines
+N 2 SIMPLS 1 (37946)
+Msg Removing lines
+N 3 REMLINL 2 8.0000 (37946)
+Msg k-Neighbours
+C 1 NEIG 3 [63,2,2] (37946)
+Msg Extracting Subnetwork according to Partition
+N 4 EXT 3 1 [0-2] 1 (23)
+E 4 CIRCULAR
+E 4 DRAW 0 0 0 0 0
+E 4 KAMADA
+Msg Removing lines
+N 5 REMLINL 2 4.0000 (37946)
+Msg k-Neighbours
+C 3 NEIG 5 [63,2,2] (37946)
+Msg Extracting Subnetwork according to Partition
+N 6 EXT 5 3 [0-2] 1 (75)
+E 6 DRAW 4 0 0 0 0
+E 6 KAMADA
+Msg Removing lines
+N 7 REMLINL 2 2.0000 (37946)
+Msg k-Neighbours
+C 5 NEIG 7 [63,2,2] (37946)
+Msg Extracting Subnetwork according to Partition
+N 8 EXT 7 5 [0-2] 1 (264)
+E 8 CIRCULAR
+E 8 DRAW 6 0 0 0 0
+E 8 KAMADA
+E 8 KAMADA
+Msg Saving network to file   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.net
+N 8 WN "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.net" 0 (264)
+Msg Removing lines
+N 9 REMLINL 2 3.0000 (37946)
+Msg k-Neighbours
+C 7 NEIG 9 [63,2,2] (37946)
+Msg Extracting Subnetwork according to Partition
+N 10 EXT 9 7 [0-2] 1 (105)
+E 10 DRAW 8 0 0 0 0
+E 10 KAMADA
+Msg Saving network to file   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.net
+N 10 WN "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.net" 0 (105)
+Msg Removing selected Vertices from Network
+N 11 REMVERT 10 [105,104,102,97,92,86,83,75,74,57,53,55,47,50,36] 1 (90)
+Msg Reading Network   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.net
+N 12 RDN "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.net" (105)
+Msg Saving network to file   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.net
+N 11 WN "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.net" 0 (90)
+E 11 DRAW 0 0 0 0 0
+Msg k-Neighbours
+C 10 NEIG 11 [4,0,2] (90)
+E 11 DRAW 10 0 0 0 0
+E 11 KAMADA
+Msg Saving network to file   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.net
+N 11 WN "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.net" 0 (90)
+Msg Saving partition to file   ---    C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.clu
+C 10 WC "C:\Users\rafa\Documents\Artigos\Ego\EgoDilma20152nhood.clu" (90)

@@ -1,0 +1,11 @@
+
+
+Heroku
+- Create
+- Database
+- Static files
+	efemeros
+	usar amazon
+	limitados no tamanho
+- batches / arquitetura escalavel
+ 

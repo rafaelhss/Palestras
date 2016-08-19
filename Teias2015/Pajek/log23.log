@@ -1,0 +1,28 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+Msg Reading Network   ---    C:\Users\rafa\Documents\Projects\zapzapnet\Network.net
+N 1 RDN "C:\Users\rafa\Documents\Projects\zapzapnet\Network.net" (9)
+E 1 CIRCULAR
+E 1 DRAW 0 0 0 0 0
+Msg Removing multiple lines
+N 2 SIMPLS 1 (9)
+E 2 DRAW 0 0 0 0 0
+Msg Removing lines
+N 3 REMLINL 2 26.0000 (9)
+E 3 DRAW 0 0 0 0 0
+E 3 KAMADA
+Msg Reading Network   ---    C:\Users\rafa\Documents\Projects\zapzapnet\Network.net
+N 4 RDN "C:\Users\rafa\Documents\Projects\zapzapnet\Network.net" (8)
+E 4 CIRCULAR
+E 4 DRAW 0 0 0 0 0
+Msg Removing multiple lines
+N 5 SIMPLS 4 (8)
+E 5 DRAW 0 0 0 0 0
+Msg Removing lines
+N 6 REMLINL 5 25.0000 (8)
+E 6 DRAW 0 0 0 0 0

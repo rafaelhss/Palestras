@@ -1,0 +1,497 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+			.container {
+				position:absolute;
+				height:455px;
+				width:606px;
+			}
+
+			.container div {
+				background-size: 321px 551px;
+				position: absolute;
+				top: 125px;
+				left: 24px;
+			}
+
+			#zap1 div{
+				background-image:url(img/zap/zap1.PNG);
+			}
+			
+			#zap2 div{
+				background-image:url(img/zap/zap2.PNG);
+			}
+			#zap3 div{
+				background-image:url(img/zap/zap3.PNG);
+			}
+			#zap4 div{
+				background-image:url(img/zap/zap4.PNG);
+			}
+			#zap5 div{
+				background-image:url(img/zap/zap5.PNG);
+			}
+			#zap6 div{
+				background-image:url(img/zap/zap6.PNG);
+			}
+			#zap7 div{
+				background-image:url(img/zap/zap7.PNG);
+			}
+			#zap8 div{
+				background-image:url(img/zap/zap8.PNG);
+			}
+			
+			.bg-image {
+				opacity:0.4;
+				width: 321px;
+				height: 551px;
+			}
+
+			.highlight-region {
+				height:100px; 
+				width:320px;
+				opacity:1;
+				 
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<span style="position:absolute; top:-40px; left:-200px; height:60px; font-size: 50%;">Slides available  at: www.rafaelhenrique.net/brasnam16</span>
+				<img src="img/logo.jpg" style="position:absolute; top:-40px; right:-230px; height:60px; ">
+				<section>
+					<h3>Formal Information Flows Among Top Authorities of the Brazilian Federal Government based on Co-word Analysis of Data Published in the Official Gazette</h3>
+					<p>Rafael Henrique Santos Soares</p>
+					<p>Jorge H. C. Fernandes</p>
+					<p>Ricardo B. Sampaio</p>
+				</section>
+				<section>sobre mim...</section>
+				<section>
+					<h4>Rafael Henrique Santos Soares</h4>
+					<p>&#10003; Pesquisador na UnB</p>
+					<p>&#10003; Mestre em Ciência da Informação (UnB)</p>
+					<p>&#10003; Bacharel em Administração (Ufmg)</p>
+					<p>&#10003; Bacharel em Sistemas de Informação (PUC-MG)</p>
+					<p/>
+					<p>&#10003; Coordenador da Subdivisão de Integração e Reusabilidade do Banco Central do Brasil</p>
+					<p>&#10003; Professor no UniCEUB</p>
+				</section>
+				<section>sobre nós...</section>
+				<section>
+					<section>
+						<h5>
+						Grupo de Pesquisas sobre Inteligência Cooperativa em Redes Sociais Complexas - UnB/Capes
+						</h5>
+						<small>dgp.cnpq.br/dgp/espelhogrupo/2334079961242970</small>
+							
+						<ul>entre outros...
+							<li>Analise de vulnerabilidades baseada em informações do portal da transparência;</li>
+							<li>Mapeamento de afinidades politicas com base em análise do discurso;</li>
+							<li>Estudo de interações sociais em ambientes virtuais de aprendizagemç</li>
+							<li>Identificação de redes sociais por meio de processamento de texto 
+								<ul>
+									<li>text to net</li>
+									<li>whatzapp text to net</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section >
+						<h4>www.text2.net</h4>
+						<img src="img/zap/text2net.png" style="border: 0px;">
+					</section>
+					<section>
+						<ul style="position: absolute; top: 0px;">
+							Whatsapp text to net<br/>
+							Export your whatsapp group chat to <u>zap@text2.net</u> and discover:
+							<li>Network structure</li>
+							<li>Most proeminent members</li>
+							<li>Word cloud</li>
+						</ul>
+						<div style="background-image:url(img/zap/phone.jpg);
+									width: 366px;
+									height: 777px;">
+							
+							<div class="fragment current-visible container" id="zap1">													
+								<div class="bg-image"></div>														
+								<div class="highlight-region " style="top:175px;left:25px;background-position: -1px -50px;"></div>
+							</div>
+							<div class="fragment current-visible container" id="zap2">													
+								<div class="bg-image"></div>														
+								<div class="highlight-region " style="top:125px;left:25px;background-position: -1px 0px;"></div>
+							</div>
+							<div class="fragment current-visible container" id="zap3">													
+								<div class="bg-image"></div>														
+								<div class="highlight-region " style="background-image:url(img/zap/down.png); background-size: 320px 100px; top:325px;left:25px;background-position: -1px 0px;"></div>
+							</div>
+							<div class="fragment current-visible container" id="zap4">													
+								<div class="bg-image"></div>														
+								<div class="highlight-region " style="top:425px;left:25px;background-position: -1px 250px;"></div>
+							</div>
+							<div class="fragment current-visible container" id="zap5">													
+								<div class="bg-image"></div>														
+								<div class="highlight-region " style="top:540px;left:25px;background-position: -1px 136px;"></div>
+							</div>
+							<div class="fragment current-visible container" id="zap6">													
+								<div class="bg-image"></div>														
+								<div class="highlight-region " style="top:390px;left:25px;background-position: -1px 296px;"></div>
+							</div>
+							<div class="fragment current-visible container" id="zap7">													
+								<div class="bg-image"></div>														
+								<div class="highlight-region " style="height:50px; 
+																	  width:320px;top:225px;left:25px;background-position: -1px -106px;"></div>
+							</div>
+							<img src="img/zap/mail.png" class="fragment current-visible" style="height:220px; 
+																			width:800px;
+																			position: absolute;top:225px;left:-100px;
+																			border: 0px;"
+																			>
+							
+							<div class="fragment container" id="zap8">	
+								<div style="height:551px; width:321px;"></div>																  
+							</div>
+							
+
+							<img src="img/zap/zap10-cel.PNG" class="fragment" style="height:430px; 
+																			width:220px;
+																			position: absolute;top:335px; left:460px;
+																			border: 0px;">																			
+							<img src="img/zap/zap9-cel.PNG" class="fragment" style="height:430px; 
+																			width:220px;
+																			position: absolute;top:335px; left:760px;
+																			border: 0px;">																			
+							
+						</div>
+					</section>
+				</section>
+				<section>
+					<h3>Formal Information Flows Among Top Authorities of the Brazilian Federal Government based on Co-word Analysis of Data Published in the Official Gazette</h3>
+					<p>Rafael Henrique Santos Soares</p>
+					<p>Jorge H. C. Fernandes</p>
+					<p>Ricardo B. Sampaio</p>
+				</section>
+				<section>
+					A hipótese deste artigo é que o estudo da <strong>rede social</strong> estabelecida pelos membros do <strong>alto escalão</strong> da Administração
+					possibilita inferir padrões de <strong>colaboração</strong> e <strong>oportunidades</strong> exploradas por esses indivíduos, baseando-se em sua posição 
+					estrutural na rede.
+				</section>
+				<section>
+						<h3>Modelo de comunicação da informação entre organizações e agentes públicos.</h3>
+				</section>
+				<section>
+					<section>
+						<p>Conceito de comunicação formal e informal de Le Coadic (2004, p.35), ideia de transição gradual de informal a formal proposta por Costa (2013) e o Modelo espiral de Dance(1967)...</p>
+						<img src="img/pink.jpg">
+					</section>
+					<section>
+						<img src="img/le.png">
+					</section>
+				</section>
+				<section>
+					<h3>Modelo de comunicação da informação entre organizações e agentes públicos.</h3>
+					<img src="img/spiral.jpg">
+				</section>
+				<section>
+						<h3>Data collection</h3>
+				</section>
+				<section>
+					<div style="position: relative; left: -100px;">
+
+						<div class="dou" style="width:500px;
+									font-size:50%;
+									text-align: justify;
+									text-justify: inter-word;">
+							<p>
+								no art. 1º da Lei nº 10887/04, à vista das informações constantes no
+								Processo INCRA/Nº 54700.000339/2016-13.
+							<p style="text-align: right">
+								MARCO AURELIO BEZERRA DA ROCHA
+							<p>
+
+							<p style="text-align: center;">
+								SUPERINTENDÊNCIA REGIONAL NO PARÁ
+							<p class="fragment highlight-blue" data-fragment-index="2" style="text-align: center;">
+								PORTARIA Nº 35, DE 23 DE JUNHO DE 2016
+							</p>
+							</p>
+							<p class="fragment highlight-blue"  data-fragment-index="5">
+								A SUPERINTENDENTE REGIONAL SUBSTITUTA
+								DO INSTITUTO NACIONAL DE COLONIZAÇÃO E REFORMA
+								AGRÁRIA - INCRA, NO ESTADO DO PARÁ, no uso das
+								atribuições que lhe são conferidas pela Portaria/INCRA/P/Nº 649, de
+								08 de agosto de 2000, publicada no Diário Oficial da União do dia
+								seguinte, resolve:<br/>
+								Cancelar a Pensão Temporária de <span class="fragment highlight-red"  data-fragment-index="6"> MARCIA LUÍZA FERNANDES
+					BENTES</span>, matrícula SIAPE nº 01527274, filha do instituidor
+								de pensão <span class="fragment highlight-red"  data-fragment-index="7">LUIZ DE SOUZA BENTES</span>, ex-ocupante do cargo de Agente
+								de Atividades Agropecuárias, Classe "S", Padrão III, matrícula SIAPE
+								n.º 1050815, em virtude da perda do motivo que assegurou a concessão
+								do benefício, ou seja, a condição de filha maior solteira sem
+								cargo permanente, à vista das informações constantes do Processo Administrativo INCRA / SR (01) / n.º54100.000070/2016-34.
+								<br/><br/>
+					<span class="fragment highlight-red"  data-fragment-index="8">
+						<span align="center">
+							EDILA FERREIRA DUARTE MONTEIRO
+						</span>
+					</span>
+							</p>
+							<p style="text-align: center;">
+							<p class="fragment highlight-current-blue" data-fragment-index="2" style="text-align: center;">
+								PORTARIA Nº 36, DE 27 DE JUNHO DE 2016
+							</p>
+							</p>
+							<p>
+								A SUPERINTENDENTE REGIONAL SUBSTITUTA,
+								DO INSTITUTO NACIONAL DE COLONIZAÇÃO E REFORMA
+								AGRÁRIA - INCRA, NO ESTADO DO PARÁ, no uso da
+								competência delegada pela Portaria INCRA/P/Nº 686, de 06 de agosto
+								de 2002, publicada no Diário Oficial do dia 07 seguinte, resolve:
+								Designar ANA CECÍLIA COELHO MAGALHÃES, ocupante
+								do efetivo de Fiscal de Cadastro e Tributação Rural, matrícula
+								SIAPE nº 1033540, para, no período de 27 de junho a 06 de julho de
+								2016, exercer os encargos de Substituta da Chefe de Serviço, código
+								DAS-101.1, do Serviço de Cadastro Rural, da Divisão de Ordenamento
+								da Estrutura Fundiária, da Superintendência Regional do
+								Pará - SR01, do Quadro de Pessoal deste Instituto.
+							</p>
+							<p style="text-align: right">
+								EDILA FERREIRA DUARTE MONTEIRO
+							</p>
+
+
+							</span>
+
+						</div>
+					</div>
+					<ol style="position: absolute; top: 0px;">
+						<li class="fragment" data-fragment-index="1">
+							Encontrar o início de cada portaria<br/>
+							<small>
+								(Palavra chave seguida de numero seguido de data)
+							</small>
+						</li>
+						<li class="fragment" data-fragment-index="4">
+							Encontrar nomes próprios no corpo da portaria<br/>
+							<small>
+								(Palavra-chave precedida e seguida de até 4 palavras com maiúscula)
+							</small>
+						</li>
+						<li class="fragment" data-fragment-index="9">
+							Construir uma rede de 2 modos<br/>
+							<small>
+								(Nomes = atores, Portaria = evento)
+							</small>
+						</li>
+						<img src="img/ego1.png" class="fragment" data-fragment-index="10">
+						</img>
+					</ol>
+				</section>
+				<section>
+
+
+					<div style="position: relative; left: -100px;">
+
+						<div class="dou" style="width:500px;
+									font-size:50%;
+									text-align: justify;
+									text-justify: inter-word;">
+							<p>
+								cargo permanente, à vista das informações constantes do Processo Administrativo INCRA / SR (01) / n.º54100.000070/2016-34.
+								<br/><br/>
+							EDILA FERREIRA DUARTE MONTEIRO
+							</p>
+							<p style="text-align: center;">
+							<p class="fragment highlight-blue" data-fragment-index="2" style="text-align: center;">
+								PORTARIA Nº 36, DE 27 DE JUNHO DE 2016
+							</p>
+							</p>
+							<p class="fragment highlight-blue"  data-fragment-index="2">
+								A SUPERINTENDENTE REGIONAL SUBSTITUTA,
+								DO INSTITUTO NACIONAL DE COLONIZAÇÃO E REFORMA
+								AGRÁRIA - INCRA, NO ESTADO DO PARÁ, no uso da
+								competência delegada pela Portaria INCRA/P/Nº 686, de 06 de agosto
+								de 2002, publicada no Diário Oficial do dia 07 seguinte, resolve:
+								Designar <span class="fragment highlight-red"  data-fragment-index="3">
+								ANA CECÍLIA COELHO MAGALHÃES </span>, ocupante
+								do efetivo de Fiscal de Cadastro e Tributação Rural, matrícula
+								SIAPE nº 1033540, para, no período de 27 de junho a 06 de julho de
+								2016, exercer os encargos de Substituta da Chefe de Serviço, código
+								DAS-101.1, do Serviço de Cadastro Rural, da Divisão de Ordenamento
+								da Estrutura Fundiária, da Superintendência Regional do
+								Pará - SR01, do Quadro de Pessoal deste Instituto.
+							<br/><br/>
+							<span class="fragment highlight-red"  data-fragment-index="4">
+								<span align="center">
+									EDILA FERREIRA DUARTE MONTEIRO
+								</span>
+							</span>
+							</p>
+							<p style="text-align: center;">
+								SUPERINTENDÊNCIA REGIONAL NA PARAÍBA
+								<br/>
+								PORTARIA Nº 9, DE 27 DE JUNHO 2016
+							</p>
+							O SUPERINTENDENTE REGIONAL SUBSTITUTO
+							DO INSTITUTO NACIONAL DE COLONIZAÇÃO E REFOR
+
+							</span>
+
+						</div>
+					</div>
+					<ol start="4" style="position: absolute; top: 0px;">
+						<li class="fragment" data-fragment-index="1">
+							Repetir os passos 1, 2, e 3 para todas as portarias<br/>
+						</li>
+							<img src="img/ego2.png" class="fragment" data-fragment-index="5">
+							</img>
+						<li class="fragment" data-fragment-index="6">
+							Mesclar as sub-redes<br/>
+							<img src="img/ego3.png" class="fragment" data-fragment-index="6">
+							</img>
+						</li>
+
+					</ol>
+				</section>
+				<section>
+					<ol start="6">
+						<li class="fragment" data-fragment-index="1">
+							Finalmente, gerar a rede de um modo a partir da de dois modos<br/>
+						</li>
+						<img src="img/ego4.png" class="fragment" data-fragment-index="5">
+							</img>
+
+					</ol>
+				</section>
+				<section>
+					<h3>Rede de ego</h3>
+					<p>A partr da rede original, extrair a sub-rede 2-neighborhood.</p>
+				</section>
+				<section data-background="img/egofull.png">
+				</section>
+				<section>
+					<h3>Métricas e análises</h3>
+				</section>
+				<section>
+					<section>
+						<p><strong>Clique</strong>: uma sub-rede completa. (Mantega, Belchior, Raupp, Pimentel and Rousseff)
+						<p><strong>Restrição diática</strong>: Mede a oportunidade de um ator mediar a comunicação entre outros atores da rede. Quanto menor mais influente o ator é na rede.</>
+						<p><strong>Densidade egocentrica</strong>: Densidade da rede formada pelos atores diretamente ligados ao ego, sem considerá-lo.</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Rede</th>
+									<th>Restrição diática agregada</th>
+									<th>Densidade egocêntrica</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Clique</td>
+									<td>0.2889</td>
+									<td>0.1484</td>
+								</tr>
+								<tr>
+									<td>Sem-clique</td>
+									<td>0.1501</td>
+									<td>0.0416</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<p>Pequena perturbação na rede levou a grande mudança no indice -> A restrição sobre Dilma é pequena (muito centralizadora?)</p>
+					</section>
+					<section>
+						<p>The removal of only four agents of the network dropped the aggregated
+restriction in 50% and the egocentric density in almost 70%. Such sensitivity in these
+metrics show that the values are small, because a very small change in the number of
+actors made a big change in the metrics. If these values were big, small perturbations in
+the network wouldn`t lead to big impact on these metrics.</p>
+						<p>These calculations and comparisons of aggregated restriction and egocentric
+density allow us to believe that the communication of information between agents of
+public Administration in Brazil are strongly centered on President Rousseff, what may
+point out to difficulties implement direct articulation between these agents. A hypothesis
+raises then: An increment on the communication between the agents who deal directly
+with the President would lead to a situation where the information would flow more
+smoothly, fast, with less noise, and the President would have more resources to deal
+with other issues.</p>
+					</section>
+				</section>
+				<section>
+					<h3>Proximidade estrutural e orçamento</h3>
+				</section>
+				<section data-background="img/budget.png">
+					
+				</section>
+				<section>
+					<p><strong>Proximidade estrutural:</strong> Peso da ligação entre o ator e a Presidenta Rousseff.</p>
+					<p><strong>Orçamento</strong>: Montante destinado ao ministério ou órgão dirigido pelo ator. </p>
+					<p><strong>Correlação entre as grandezas: 0,6012 (Estatisticamente significativa)</strong>
+				</section>
+				<section>
+					<h3>Por fim...</h3>
+				</section>
+				<section>
+					<section>
+						<p>&#10003; Dados apontam para uma grande centralização das comunicações na Presidência</p>
+						<p>&#10003; Dados apontam que quanto mais proximo da Presidenta maior o orçamento alocado sob responsabilidade do ator.</p>
+					</section>
+					<section>
+						<h3>Trabahos futuros</h3>
+						<p>&#10003; Validação usando agenda oficial</p>
+						<p>&#10003; Efeitos de eventos políticos relevantes na estrutura da rede'</p>
+						<p>&#10003; Comparação entre a relevancia estrutural e desempenho nas eleições</p>
+						
+					</section>
+
+				</section>
+				<section>
+					<h3>Obrigado!</h3>
+					<p>Vamos conversar?!</p>
+					<p>Rafael Henrique Santos Soares</p>
+					<p>rafaelhss@gmail.com</p>
+					<p>www.rafaelhenrique.net</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/plugin/markdown/marked.js' },
+					{ src: '../reveal/plugin/markdown/markdown.js' },
+					{ src: '../reveal/plugin/notes/notes.js', async: true },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
