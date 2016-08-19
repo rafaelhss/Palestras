@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Tudo que voce precisa saber para tirar sua ideia do papel</title>
+
+		<meta name="description" content="Slides para a disciplina Projeto de sistemas web 2">
+		<meta name="author" content="Rafael Henrique">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/sky.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+			
+			
+						var atributos = { '"Nome"' : '"teste"'};
+			
+			
+			function AdicionaRegistro() {
+				
+				var code = document.getElementById('codeAdd');
+				var codestr = code.innerHTML;
+				
+				var i = codestr.indexOf("setAttribute(") + 13;
+				var j = codestr.indexOf(");");
+				
+				var atribute = codestr.substring(i,j).replace(",",":");
+
+			//	alert(atribute);
+				
+				atributos[atribute.substring(atribute.indexOf(":"),atribute.lenght-atribute.indexOf(":"))] = atribute.substring(atribute.indexOf(":")+1);
+				
+				var table = document.getElementById('tbSession');
+				table.rows[1].cells[0].innerHTML = "";
+				for(var key in atributos) {
+					if(atributos.hasOwnProperty(key)) {
+					//alert("Key: " + key + ", Value: " + atributos[key]);
+					  table.rows[1].cells[0].innerHTML = table.rows[1].cells[0].innerHTML +  key + " - " + atributos[key] + "<br/>" ;
+					}
+				}
+				
+			}
+			
+			function BuscaRegistro() {
+				
+				var code = document.getElementById('codeBusca');
+				var codestr = code.innerHTML;
+				
+				var i = codestr.indexOf("getAttribute(") + 13;
+				var j = codestr.indexOf(");");
+				
+				var atribute = codestr.substring(i,j).replace(",",":");
+
+				//alert(atribute);
+				
+				
+				var code = document.getElementById('codeResp');
+				code.innerHTML = atributos[atribute];
+				
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			.primeira {
+				position: absolute;
+				top: 290px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+
+				<section data-background="Images/capa4t.png">
+<div class="primeira">
+					<h3>Tudo que voce precisa saber para tirar sua ideia do papel</h3>
+
+	<h3>
+		<small><a href="http://rafaelhenrique.net">Rafael Henrique Santos Soares</a> <br/> <a href="rafaelhenrique.net">www.rafaelhenrique.net</a></small>
+	</h3>
+
+</div>
+
+				</section>
+
+				<section>
+				<h3>Agradecimentos</h3>
+					<p>Ao IFB e à organização do III IFTechDay pela oportunidade, e aos presentes pelo prestígio.</p>
+				<h3>Quem sou?</h3>
+				<img src="https://upload.wikimedia.org/wikipedia/pt/2/2e/Logo_Banco_Central_do_Brasil.png" width="100" height="100">
+				<img src="http://www.superdownloads.com.br/imagens/screenshots/2/9/24242832869,O.jpg" width="100" height="100">
+				<img src="http://www.abc.es/Media/201402/19/papa-francisco-viento--644x362.JPG" width="100" height="100">
+				<img src="http://uberlandiacvb.com.br/portal/wp-content/uploads/2015/06/Maria-Rita-R7.jpg" width="100" height="100">
+				<img src="http://www.neodent.com.br/images/UFMG-LOGO.png" width="100" height="100">
+				<img src="http://cnews.com.br/content/images/sites/Am%C3%A9rica-MG%20Escudo.jpg" width="100" height="100">
+				<img src="http://mlb-s1-p.mlstatic.com/fifa-soccer-16-2016-em-portugus-pc-dvd-rom-535901-MLB20435301817_092015-O.jpg" width="100" height="100">
+				<img src="http://www.technollama.co.uk/wp-content/uploads/2013/07/socialnetwork.jpg" width="100" height="100">
+				<img src="http://mampituba.com.br/wp-content/uploads/2015/08/futebol-bola-rede-getty-images-6001.jpg" width="100" height="100">
+				<img src="http://wp-content.bluebus.com.br/wp-content/uploads/2014/08/Conhe%C3%A7a-as-particularidades-de-um-pneu-de-F1.jpg" width="100" height="100">
+				<img src="http://www.clickgratis.com.br/fotos-imagens/rzo/aHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9jS3ZDSFJuNlNNSS9ocWRlZmF1bHQuanBn.jpg" width="100" height="100">
+				<img src="http://www.hipocrates.com.br/images/esporte/ginasticaolimpica/img.jpg" width="100" height="100">
+				<img src="http://www.blog.saude.gov.br/images/arquivos_blog_saude/unb.jpg" width="100" height="100">
+				<img src="http://sindser.org.br/s/wp-content/uploads/2013/09/uniceub.jpg" width="100" height="100">
+				<img src="http://www.gangland.com.br/wp-content/uploads/2014/08/hibria_pressfront.jpg" width="100" height="100">
+				<img src="http://deirdrelawless.com/wp-content/uploads/2015/07/makeup-artist-dublin.jpg" width="100" height="100">
+				</section>
+
+				<section>
+					<img src="Images/queremos.png">
+				</section>
+
+				<section>
+					<h3>MVP - Minimum Viable Product (Mínimo produto viavel)</h3>
+					<p>Versão do produto com um <u>conjunto mínimo de características</u> necessárias para que ele possa ser colocado de imediato no ar e submetido a testes que permitirão validá-lo e aprimorá-lo.</p>
+					<img src="Images/lean.png" width="200" height="300">
+				</section>
+
+
+
+				<section>
+					<h3>Ferramentas</h3>
+					<img src="Images/git.jpg" width="200" height="200">
+					<img src="Images/maven.gif" width="200" height="200">
+					<img src="Images/tomcat.png" width="200" height="200">
+					<img src="Images/heroku.png" width="200" height="200">
+					<img src="Images/postgres.png" width="200" height="200">
+					<img src="Images/hibernate.svg" width="200" height="200">
+					<img src="Images/facebook4jlogo.png" width="200" height="200">
+					<img src="Images/paypal.jpg" width="200" height="200">
+					<li>Todo mundo tem os mesmos problemas! Não vale a pena reinventar a roda...</li>
+				</section>
+				<section>
+					<h3>GIT</h3>
+					<img src="Images/git.jpg">
+					<li>Sistema de controle de versão de código distribuído</li>
+					<li>Vem junto com o heroku, então nao precisamos preocupar com instalação</li>
+				</section>
+				<section>
+					<h3>GIT</h3>
+					<img src="Images/git.png">
+					<li>Exemplo de historico de um projeto usando GIT</li>
+				</section>
+				<section>
+					<h3>GIT</h3>
+					<li>Inicializa um repositório local</li>
+					<pre><code>git init</code></pre>
+					<li>Adiciona arquivos para o proximo commit</li>
+					<pre><code>git add --all</code></pre>
+					<li>Confirma alterações no <b>repositório local</b></li>
+					<pre><code>git commit -m "correcao do bug" </code></pre>
+					<li>Envia para o repositorio remoto </li>
+					<pre><code>git push</code></pre>
+				</section>
+				<section>
+					<h3>Maven</h3>
+					<img src="Images/maven.gif">
+					<li>Gerenciador de dependências Java</li>
+					<li>download em https://maven.apache.org/download.cgi</li>
+				</section>
+				<section>
+					<h3>Maven</h3>
+					<li>O projeto precisa ter um arquivo chamado pom.xml em sua raiz</li>
+					<li>No pom.xml ficam as descrições das dependências</li>
+					<li>O comando abaixo se encarrega de fazer o download dos jars das dependencias, compilar o projeto e gerar o artefato adequado, de acordo com a descrição no pom</li>
+					<pre><code>mvn package</code></pre>
+				</section>
+
+				<section>
+					<h3>Tomcat embedded</h3>
+					<img src="Images/tomcat.png">
+					<li>Servidor web que pode ser incorporado na própria aplicação.</li>
+					<li>É importante ser assim para publicar na nuvem.</li>
+				</section>
+
+
+
+				<section>
+					<h3>Tomcat embedded (Maven)</h3>
+					<ul>
+						<li>Criar um pom.xml como o modelo abaixo</li>
+					</ul>
+					<pre>
+						<code>
+&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"&gt;
+  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+  &lt;groupId&gt;com.conselhos1&lt;/groupId&gt;
+  &lt;artifactId&gt;conselhos&lt;/artifactId&gt;
+  &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+  &lt;packaging&gt;jar&lt;/packaging&gt;
+  &lt;name&gt;Conselhos&lt;/name&gt;
+  &lt;url&gt;http://maven.apache.org&lt;/url&gt;
+  &lt;properties&gt;
+	&lt;tomcat.version&gt;7.0.57&lt;/tomcat.version&gt;
+  &lt;/properties&gt;
+  &lt;dependencies&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.apache.tomcat.embed&lt;/groupId&gt;
+		&lt;artifactId&gt;tomcat-embed-core&lt;/artifactId&gt;
+		&lt;version&gt;${tomcat.version}&lt;/version&gt;
+	&lt;/dependency&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.apache.tomcat.embed&lt;/groupId&gt;
+		&lt;artifactId&gt;tomcat-embed-logging-juli&lt;/artifactId&gt;
+		&lt;version&gt;${tomcat.version}&lt;/version&gt;
+	&lt;/dependency&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.apache.tomcat.embed&lt;/groupId&gt;
+		&lt;artifactId&gt;tomcat-embed-jasper&lt;/artifactId&gt;
+		&lt;version&gt;${tomcat.version}&lt;/version&gt;
+	&lt;/dependency&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.apache.tomcat&lt;/groupId&gt;
+		&lt;artifactId&gt;tomcat-jasper&lt;/artifactId&gt;
+		&lt;version&gt;${tomcat.version}&lt;/version&gt;
+	&lt;/dependency&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.apache.tomcat&lt;/groupId&gt;
+		&lt;artifactId&gt;tomcat-jasper-el&lt;/artifactId&gt;
+		&lt;version&gt;${tomcat.version}&lt;/version&gt;
+	&lt;/dependency&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.apache.tomcat&lt;/groupId&gt;
+		&lt;artifactId&gt;tomcat-jsp-api&lt;/artifactId&gt;
+		&lt;version&gt;${tomcat.version}&lt;/version&gt;
+	&lt;/dependency&gt;
+  &lt;/dependencies&gt;
+  &lt;build&gt;
+	&lt;finalName&gt;conselhos&lt;/finalName&gt;
+	&lt;plugins&gt;
+		&lt;plugin&gt;
+		   &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+		   &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+		   &lt;version&gt;2.3.2&lt;/version&gt;
+		   &lt;inherited&gt;true&lt;/inherited&gt;
+		   &lt;configuration&gt;
+				 &lt;source&gt;1.8&lt;/source&gt;
+				 &lt;target&gt;1.8&lt;/target&gt;
+			&lt;/configuration&gt;
+		&lt;/plugin&gt;
+		&lt;plugin&gt;
+			&lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+			&lt;artifactId&gt;appassembler-maven-plugin&lt;/artifactId&gt;
+			&lt;version&gt;1.1.1&lt;/version&gt;
+			&lt;configuration&gt;
+				&lt;assembleDirectory&gt;target&lt;/assembleDirectory&gt;
+				&lt;programs&gt;
+					&lt;program&gt;
+						&lt;mainClass&gt;launch.Main&lt;/mainClass&gt;
+						&lt;name&gt;webapp&lt;/name&gt;
+					&lt;/program&gt;
+				&lt;/programs&gt;
+			&lt;/configuration&gt;
+			&lt;executions&gt;
+				&lt;execution&gt;
+					&lt;phase&gt;package&lt;/phase&gt;
+					&lt;goals&gt;
+						&lt;goal&gt;assemble&lt;/goal&gt;
+					&lt;/goals&gt;
+				&lt;/execution&gt;
+			&lt;/executions&gt;
+		&lt;/plugin&gt;
+	&lt;/plugins&gt;
+  &lt;/build&gt;
+&lt;/project&gt;
+						</code>
+					</pre>
+				</section>
+
+                <section>
+                    <h3>Tomcat embedded - launch</h3>
+                    <li>Adicione a classe que levanta o Tomcat</li>
+                    <ol>
+                        <li>Criar uma pasta src/main/java/launch</li>
+                        <li>Criar uma classe chamada Main.java com o conteudo a seguir</li>
+                    </ol>
+					<pre>
+						<code>
+package launch;
+import java.io.File;
+import org.apache.catalina.startup.Tomcat;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+
+        String webappDirLocation = "src/main/webapp/";
+        Tomcat tomcat = new Tomcat();
+
+        String webPort = System.getenv("PORT");
+        if(webPort == null || webPort.isEmpty()) {
+            webPort = "8080";
+        }
+
+        tomcat.setPort(Integer.valueOf(webPort));
+
+        tomcat.addWebapp("/", new File(webappDirLocation).getAbsolutePath());
+        System.out.println("configuring app with basedir: " + new File("./" + webappDirLocation).getAbsolutePath());
+
+        tomcat.start();
+        tomcat.getServer().await();
+    }
+}
+                        </code>
+					</pre>
+                </section>
+                <section>
+                    <h3>Tomcat (Maven)</h3>
+
+                    <li>Coloque suas servlets na pasta src/main/java</li>
+                    <li>Coloque suas JSP, html e WEB-INF na pasta src/main/webapp</li>
+                    <li>Coloque seu arquivo <i>hibernate.cfg.xml</i> na pasta src/main/resources</li>
+                    <li>Construa sua aplicacao com maven</li>
+					 <pre><code class="bash">
+mvn package
+                     </code></pre>
+                    <li>Execute o tomcat e teste localmente (http://localhost:8080)</li>
+					 <pre><code class="bash">
+target\bin\webapp.bat
+                     </code></pre>
+                </section>
+
+
+
+
+                <section>
+                    <h3>Heroku</h3>
+                    <img src="Images/heroku.png">
+                    <li>Serviço de computação em nuvem</li>
+                    <li>Conjunto consistente de serviços gratuitos</li>
+                    <li>Utilização integrada com GIT e Maven</li>
+                </section>
+                <section>
+                    <h3>Heroku - configuração</h3>
+                    <li>Registre-se em heroku.com</li>
+                    <li>Baixar o heroku toolbelt em https://devcenter.heroku.com/articles/getting-started-with-java#set-up</li>
+                    <li>O Toolbelt instala capacidades de manipulação da sua conta no heroku e instala também um cliente GIT</li>
+                </section>
+                <!--<section>
+                    <h3>Heroku - comandos</h3>
+                    <li>Criar uma aplicação na plataforma. (Executar na raiz da aplicação) </li>
+                    <pre><code>heroku create NOME_DA_APLICACAO</code></pre>
+                    <li>Publicar a ultima versao da aplicação. (Envia o codigo, executa o maven package remotamente e publica)</li>
+                    <pre><code>git push heroku master</code></pre>
+                </section>
+-->
+
+				<section>
+					<h3>Heroku</h3>
+					<li>Crie um arquivo chamado ProcFile com o seguinte conteudo</li>
+					<pre><code class="bash">web: sh target/bin/webapp</code></pre>
+					<li>Esse arquivo descreve seus serviços para o heroku</li>
+
+				</section>
+
+				<section>
+					<li>Confirme suas alterações no GIT localmente <!--<small>Execute os comandos na pasta raiz do projeto</small>--></li>
+
+					<pre><code class="bash">git init
+git add --all
+git commit -m "Primeira versao do sistema. Pronto para decolar!"</code></pre>
+                    <li>Configurar suas credenciais</li>
+                    <pre><code>heroku login</code></pre>
+                    <li>Crie sua aplicação na nuvem (maximo 5 sem pagar)</li>
+					<pre><code class="bash">heroku create minhaAplicacao</code></pre>
+					<small>Ness caso nossa aplicação ficara em http://minhaAplicacao.heroku.com</small>
+
+					<li>Publique a ultima versao do código</li>
+					<pre><code class="bash">git push heroku master</code></pre>
+
+					<li>Logs de erro podem ser vistos usando:</li>
+					<pre><code class="bash">heroku logs</code></pre>
+
+				</section>
+                <section>
+                    <h3>Heroku  (Maven)</h3>
+                    <li>Adicionar as dependencias do JSTL, Facebook4J, Hibernate e PostgreSQL</li>
+					<pre>
+						<code>
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.hibernate&lt;/groupId&gt;
+    &lt;artifactId&gt;hibernate-entitymanager&lt;/artifactId&gt;
+    &lt;version&gt;5.0.3.Final&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.hibernate&lt;/groupId&gt;
+    &lt;artifactId&gt;hibernate-core&lt;/artifactId&gt;
+    &lt;version&gt;5.0.3.Final&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.postgresql&lt;/groupId&gt;
+    &lt;artifactId&gt;postgresql&lt;/artifactId&gt;
+    &lt;version&gt;9.3-1100-jdbc41&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;javax.servlet&lt;/groupId&gt;
+    &lt;artifactId&gt;jstl&lt;/artifactId&gt;
+    &lt;version&gt;1.2&lt;/version&gt;
+&lt;/dependency&gt;
+                        </code>
+					</pre>
+                </section>
+
+
+				<section>
+					<section>
+					<h3>PostgreSQL</h3>
+					<p>http://www.postgresql.org/     https://www.heroku.com/postgres</p>
+					<p><img src="Images/postgres.png" width="250" height="250"> </p>
+					<ul>
+						<li>Sistema gerenciador de banco de dados relacional open-source</li>
+						<li>Disponivel em nuvem; Acessível, portanto, de qualquer lugar.</li>
+					</ul>
+					</section>
+					<section>
+						<h3>Hibernate</h3>
+						<img src="Images/hibernate.svg">
+						<li>Framework para acesso facilitado a dados por meio de mapeamento objeto/relacional</li>
+					</section>
+
+					<section>
+						<h3>Hibernate</h3>
+						<img src="Images/hibernate2.png">
+						<li>Exemplo de INSERT com hibernate</li>
+<pre>
+	<code>
+		Conselho cons = new Conselho('Devo comer bacon?','Não, dá cancer.','rafaelhss@gmail.com');
+
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		session.save(cons);
+		session.flush();
+		session.close();
+	</code>
+</pre>
+					</section>
+
+
+					<section>
+						<h3>Hibernate - Configuração</h3>
+						<li>Dependencia no maven</li>
+					<pre><code>
+						&lt;dependency&gt;
+						&lt;groupId&gt;org.hibernate&lt;/groupId&gt;
+						&lt;artifactId&gt;hibernate-entitymanager&lt;/artifactId&gt;
+						&lt;version&gt;5.0.3.Final&lt;/version&gt;
+						&lt;/dependency&gt;
+
+						&lt;dependency&gt;
+						&lt;groupId&gt;org.hibernate&lt;/groupId&gt;
+						&lt;artifactId&gt;hibernate-core&lt;/artifactId&gt;
+						&lt;version&gt;5.0.3.Final&lt;/version&gt;
+						&lt;/dependency&gt;
+					</code></pre>
+					</section>
+					<section>
+						<h3>Hibernate - Configuração</h3>
+						<li>Hibernate.cfg.xml - deve estar em src/main/resources</li>
+					<pre><code>
+						&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+						&lt;!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"&gt;
+						&lt;hibernate-configuration&gt;
+						&lt;session-factory&gt;
+						&lt;property name="hibernate.dialect"&gt;org.hibernate.dialect.PostgreSQLDialect&lt;/property&gt;
+						&lt;property name="hibernate.connection.driver_class"&gt;org.postgresql.Driver&lt;/property&gt;
+						&lt;property name="hibernate.connection.url"&gt;jdbc:postgresql://localhost:5432/postgres&lt;/property&gt;
+						&lt;property name="hibernate.connection.username"&gt;rafael&lt;/property&gt;
+						&lt;property name="hibernate.connection.password"&gt;VRexJbyIxR-W8UR_YvQvdpc3c3&lt;/property&gt;
+
+						&lt;mapping class="bean.Conselho"/&gt;
+						&lt;/session-factory&gt;
+						&lt;/hibernate-configuration&gt;					</code></pre>
+						<li>Atenção para a tag <b>mapping</b>. Deve conter as classes mapeadas.</li>
+					</section>
+
+
+
+				</section>
+				<section>
+					<section>
+						<h3>PostgreSQL - Config</h3>
+						<li>Para utilizar o Postgres a partir de sua aplicação hospedada no Heroku é necessário aprovisioná-lo na sua conta</li>
+						<li>Há diversos planos de utilização, desde gratuitos, para iniciantes, até planos que custam $6000 mensais. A diferenã entre os planos envolve capacidade, desempenho e disponibilidade.</li>
+						<li>O plano gratuito se chama Hobby Dev</li>
+						<li>Para aprovisionar o postgres na sua aplicação, acesse https://dashboard.heroku.com e siga os passos abaixo</li>
+					</section>
+					<section>
+						<h3>PostgreSQL - Config</h3>
+						<p><img src="Images/postgres1.png"></p>
+					</section>
+					<section>
+						<h3>PostgreSQL - Config</h3>
+						<li>Escolha o plano Hobby Dev - Free</li>
+						<p><img src="Images/postgres2.png"></p>
+					</section>
+					<section>
+						<h3>PostgreSQL - Config</h3>
+						<li>Utilize os dados do banco para configurar sua conexão</li>
+						<p><img src="Images/postgres3.png"></p>
+					</section>
+				</section>
+				<section>
+					<h3>PostgreSQL - Admin</h3>
+					<li>Use a ferramenta pgAdmin (http://www.pgadmin.org/download/) para conectar-se ao banco, criar tabelas, submeter consultas, etc... </li>
+					<p><img src="Images/pgadm.png"></p>
+				</section>
+				<section>
+					<h3>PostgreSQL - Config pgAdmin x Heroku</h3>
+					<p><img src="Images/postgres4.png"></p>
+				</section>
+				<section>
+					<h3>PostgreSQL - Config Hibernate</h3>
+					<pre><code>
+&lt;property name="hibernate.dialect"&gt;org.hibernate.dialect.PostgreSQLDialect&lt;/property&gt;
+&lt;property name="hibernate.connection.driver_class"&gt;org.postgresql.Driver&lt;/property&gt;
+&lt;property name="hibernate.temp.use_jdbc_metadata_defaults"&gt;false&lt;/property&gt;
+&lt;property name="hibernate.connection.url"&gt;jdbc:postgresql://ec2-107-21-219-235.compute-1.amazonaws.com:5432/d17nleuljn7a5?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&lt;/property&gt;
+&lt;property name="hibernate.connection.username"&gt;qvnfkdkbayapwg&lt;/property&gt;
+&lt;property name="hibernate.connection.password"&gt;VRexJbyIxR-W8UR_YvQvdpc3c3&lt;/property&gt;
+					</code></pre>
+					<li>Padrao da url: jdbc:postgresql://HOST:PORTA/BANCO?...</li>
+					<li>Atenção para a inclusão do trecho <i>ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</i> no final da connection.url. <b>Indispensável</b> para conexão com o banco na nuvem.</li>
+				</section>
+
+
+
+				<section>
+					<h3>Facebook4J</h3>
+					<h4>http://facebook4j.org/</h4>
+					<p><img src="Images/facebook4jlogo.png"> </p>
+					<p>Framework que encapsula a complexidade de integração com o Facebook</p>
+					<p>Permite, entre outras coisas, autenticação, recuperar informações do usuário, listar seus amigos, posts e fotos, fazer postagens em nome do usuário, etc...</p>
+                </section>
+                <section>
+                    <h3>Facebook4J</h3>
+                    <li>dependencia no maven</li>
+					<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.facebook4j&lt;/groupId&gt;
+    &lt;artifactId&gt;facebook4j-core&lt;/artifactId&gt;
+    &lt;version&gt;[2.3,)&lt;/version&gt;
+&lt;/dependency&gt;</code></pre>
+				</section>
+				<section>
+					<h3>Facebook4J</h3>
+					<h4>Processo de autenticação OAuth no facebook</h4>
+					<img src="Images/oauth.jpg">
+				</section>
+
+				<section>
+					<section>
+							<h3>Facebook4J</h3>
+						<li>Passo 2 - redirecionar para o facebook</li>
+						<pre><code class="java">
+Facebook facebook = new FacebookFactory().getInstance();
+facebook.setOAuthAppId("457959710995238", "69d6564f2573161");
+facebook.setOAuthPermissions("public_profile, email, user_posts, publish_actions");
+
+//salva o objeto Facebook para ser recuperado na callback
+request.getSession().setAttribute("facebook", facebook);
+response.sendRedirect(facebook.getOAuthAuthorizationURL(callbackURL.toString()));
+						</code></pre>
+						<li>É necessário gerar um APPID e um APPSecret no site https://developers.facebook.com/</li>
+						<li>É preciso configurar a callback na plataforma developers.facebook</li>
+					</section>
+					<section>
+						<p>Gerando APPID e AppSecret</p>
+						<img src="Images/Facebook1.png">
+					</section>
+					<section>
+						<p>Gerando APPID e AppSecret</p>
+						<img src="Images/Facebook2.png">
+					</section>
+					<section>
+						<p>Gerando APPID e AppSecret</p>
+						<img src="Images/Facebook3.png">
+					</section>
+					<section>
+						<p>Gerando APPID e AppSecret</p>
+						<img src="Images/Facebook4.png">
+					</section>
+					<section>
+						<p>Gerando APPID e AppSecret</p>
+						<img src="Images/Facebook5.png">
+					</section>
+					<section>
+						<p>Gerando APPID e AppSecret</p>
+						<img src="Images/Facebook6.png">
+					</section>
+					<section>
+						<p>Gerando APPID e AppSecret</p>
+						<img src="Images/Facebook7.png">
+					</section>
+					<section>
+						<p>Gerando APPID e AppSecret</p>
+						<img src="Images/Facebook8.png">
+					</section>
+					<section>
+						<p>Configurando a callback</p>
+						<img src="Images/Facebook9.png">
+					</section>
+				</section>
+
+				<section>
+					<h3>Facebook4J</h3>
+					<li>Passo 3 - recebendo a callback do facebook</li>
+					<li>Nesse ponto o usuário ja está 'logado' e você pode acessar suas informações.</li>
+						<pre><code class="java">
+//recupera o objeto Facebook da sessao
+Facebook facebook = (Facebook) request.getSession().getAttribute("facebook");
+User user = facebook.getUser(facebook.getId(), new Reading().fields("email"));
+out.println("seu email: " + user.getEmail());
+						</code></pre>
+				</section>
+
+				<section>
+					<h3>Paypal</h3>
+					<img src="Images/paypal.jpg">
+					<li>Plataforma de pagamentos operando no Brasil e em mais de 100 paises</li>
+				</section>
+				<section>
+					<section>
+						<h3>Paypal</h3>
+						<li>Para gerar uma cobrança basta cadastrar um produto e gerar o botão HTML</li>
+						<li>Veja o passo a passo abaixo</li>
+					</section>
+					<section>
+						<h3>Paypal</h3>
+						<li>Acesse https://www.paypal.com/buttons/select</li>
+						<img src="Images/paypal1.jpg">
+					</section>
+					<section>
+						<h3>Paypal</h3>
+						<li>Escolha um nome para o produto e um preço (BRL = Real Brasileiro)</li>
+						<img src="Images/paypal2.png">
+					</section>
+					<section>
+						<h3>Paypal</h3>
+						<li>Voce provavelmente nao tem um merchant account, entao use seu email.</li>
+						<img src="Images/paypal3.png">
+					</section>
+					<section>
+						<h3>Paypal</h3>
+						<li>Ao clicar em <i>create button</i> é gerado o código HTML do botão, pronto para usar</li>
+						<img src="Images/paypal4.png">
+					</section>
+				</section>
+
+				<section>
+					<h3>Reflexões</h3>
+					<li>As ferramentas apresentadas contribuem para acelerar o desenvolvimento de um MVP?</li>
+					<li>Quanto tempo/dinheiro seria necessário para disponibilizar uma solução web sem essas ferramentas?</li>
+					<li>Vale a pena implementar qualquer ideia?</li>
+				</section>
+
+				<section>
+					<h3>Obrigado!</h3>
+					<img src="Images/partiu.jpg" width="600" height="400">
+					<p>Essa apresentação está disponivel em www.rafaelhenrique.net/iftechday</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
