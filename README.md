@@ -1,4 +1,5 @@
 # Palestras
+##[Ciclo de Palestras CPD - UnB] Análise de Redes Sociais - Conceitos e Aplicações (http://palestras.herokuapp.com/CicloCPDUnB/Presentation/bkp/index.html)
 ##[5º BraSNAM - Brazilian Workshop on Social Network Analysis and Mining.](http://palestras.herokuapp.com/Brasnam2016/brasnam16/index.html)
 ##[III IFTechDay] (http://palestras.herokuapp.com/IFTechDay/index.html)
 ##[Congresso UniCEUB 2015] (http://palestras.herokuapp.com/CongressoUniceub2015/Presentation/index.html)
