@@ -1,5 +1,5 @@
 # Palestras
-##[Encontro do Desenvolvedor - Novidades da QCON San Francisco 2016] (https://github.com/rafaelhss/palestras/blob/master/EncontroDesenvolvedor2016)
+##[Encontro do Desenvolvedor - Novidades da QCON San Francisco 2016] (https://github.com/rafaelhss/palestras/tree/master/EncontroDesenvolvedor2016)
 ##[Ciclo de Palestras CPD - UnB:  Análise de Redes Sociais - Conceitos e Aplicações] (http://palestras.herokuapp.com/CicloCPDUnB/Presentation/bkp/index.html)
 ##[5º BraSNAM - Brazilian Workshop on Social Network Analysis and Mining.](http://palestras.herokuapp.com/Brasnam2016/brasnam16/index.html)
 ##[III IFTechDay] (http://palestras.herokuapp.com/IFTechDay/index.html)
